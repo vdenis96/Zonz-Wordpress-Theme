@@ -1,0 +1,520 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mr. Tailor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-29 10:31+0000\n"
+"PO-Revision-Date: 2020-10-29 10:31+0000\n"
+"Last-Translator: Peter Ogterop\n"
+"Language-Team: Nederlands\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.4; wp-5.4.2"
+
+#: ../mrtailor/header-topbar.php:70 ../mrtailor/footer.php:117
+#: ../mrtailor/page-removed-footer-items.php:204
+#: ../mrtailor/page-removed-dropdown-footer-items.php:197
+msgid "Logout"
+msgstr ""
+
+#: ../mrtailor/comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../mrtailor/comments.php:36 ../mrtailor/comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
+#: ../mrtailor/comments.php:37 ../mrtailor/comments.php:57
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../mrtailor/comments.php:38 ../mrtailor/comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../mrtailor/comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: ../mrtailor/comments.php:89
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../mrtailor/comments.php:93
+msgid "Name"
+msgstr ""
+
+#: ../mrtailor/comments.php:95
+msgid "Email Address"
+msgstr ""
+
+#: ../mrtailor/comments.php:97
+msgid "Website"
+msgstr ""
+
+#: ../mrtailor/comments.php:103
+msgid "Message"
+msgstr ""
+
+#. Name of the template
+msgid "Page without footer"
+msgstr ""
+
+#: ../mrtailor/content-audio.php:37 ../mrtailor/content-audio.php:40
+#: ../mrtailor/content-quote.php:34 ../mrtailor/content-quote.php:37
+#: ../mrtailor/content-gallery.php:158 ../mrtailor/content-gallery.php:161
+#: ../mrtailor/content-chat.php:36 ../mrtailor/index.php:60
+#: ../mrtailor/index.php:63 ../mrtailor/content-image.php:30
+#: ../mrtailor/content-image.php:33 ../mrtailor/content.php:57
+#: ../mrtailor/content.php:60 ../mrtailor/content-video.php:41
+#: ../mrtailor/content-video.php:44 ../mrtailor/content-link.php:32
+#: ../mrtailor/content-link.php:35 ../mrtailor/content-status.php:23
+#: ../mrtailor/content-status.php:26 ../mrtailor/content-aside.php:23
+#: ../mrtailor/content-aside.php:26
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: ../mrtailor/content-audio.php:43 ../mrtailor/content-quote.php:40
+#: ../mrtailor/content-gallery.php:165 ../mrtailor/content-page.php:8
+#: ../mrtailor/content-chat.php:42 ../mrtailor/content-image.php:36
+#: ../mrtailor/content.php:63 ../mrtailor/content-video.php:47
+#: ../mrtailor/content-link.php:38 ../mrtailor/content-status.php:29
+#: ../mrtailor/content-aside.php:29 ../mrtailor/content-search_.php:27
+msgid "Pages:"
+msgstr ""
+
+#: ../mrtailor/content-audio.php:51 ../mrtailor/content-quote.php:47
+#: ../mrtailor/content-gallery.php:175 ../mrtailor/content-image.php:43
+#: ../mrtailor/content.php:70 ../mrtailor/content-video.php:55
+#: ../mrtailor/content-link.php:46 ../mrtailor/content-status.php:36
+#: ../mrtailor/content-aside.php:36
+msgid "Share this post"
+msgstr ""
+
+#: ../mrtailor/content-none.php:19
+msgid "Nothing Found"
+msgstr ""
+
+#: ../mrtailor/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../mrtailor/content-none.php:29
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../mrtailor/content-none.php:34
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../mrtailor/footer.php:54
+msgid "Payment methods"
+msgstr ""
+
+#: ../mrtailor/functions.php:294
+#: ../mrtailor/bkp(03-10-2018)(old)functions.php:293
+#: ../mrtailor/bkp(19-04-2019)functions.php:293
+msgid "Top Bar Navigation"
+msgstr ""
+
+#: ../mrtailor/functions.php:295
+#: ../mrtailor/bkp(03-10-2018)(old)functions.php:294
+#: ../mrtailor/bkp(19-04-2019)functions.php:294
+msgid "Main Navigation"
+msgstr ""
+
+#: ../mrtailor/functions.php:519
+#: ../mrtailor/bkp(03-10-2018)(old)functions.php:513
+#: ../mrtailor/bkp(19-04-2019)functions.php:513
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../mrtailor/functions.php:580
+#: ../mrtailor/bkp(03-10-2018)(old)functions.php:574
+#: ../mrtailor/bkp(19-04-2019)functions.php:574
+msgid "Sidebar"
+msgstr ""
+
+#: ../mrtailor/functions.php:590
+#: ../mrtailor/bkp(03-10-2018)(old)functions.php:584
+#: ../mrtailor/bkp(19-04-2019)functions.php:584
+msgid "Footer Widget Area"
+msgstr ""
+
+#: ../mrtailor/functions.php:600
+#: ../mrtailor/bkp(03-10-2018)(old)functions.php:594
+#: ../mrtailor/bkp(19-04-2019)functions.php:594
+msgid "Shop Sidebar"
+msgstr ""
+
+#: ../mrtailor/functions.php:908
+#: ../mrtailor/bkp(03-10-2018)(old)functions.php:902
+#: ../mrtailor/bkp(19-04-2019)functions.php:902
+msgid "Share this product"
+msgstr ""
+
+#. Name of the template
+msgid "Narrow Page"
+msgstr ""
+
+#: ../mrtailor/404.php:14
+msgid "Oops 404 again! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../mrtailor/404.php:18
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../mrtailor/content-page.php:7 ../mrtailor/content-search_.php:26
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Name of the template
+msgid "Blank"
+msgstr ""
+
+#: ../mrtailor/image.php:27
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span>. Size: <i class=\"fa fa-picture-o\"></i>"
+" <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in "
+"<i class=\"fa fa-folder-open\"></i> <a href=\"%6$s\" title=\"Return to "
+"%7$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: ../mrtailor/image.php:46
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../mrtailor/image.php:50
+msgid "Next &rarr;"
+msgstr ""
+
+#. Name of the template
+msgid "Contact Page"
+msgstr ""
+
+#: ../mrtailor/search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: ../mrtailor/author-bio.php:6
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../mrtailor/author-bio.php:11
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Name of the template
+msgid "Page with removed items in the footer"
+msgstr ""
+
+#. Name of the template
+msgid "Page with Slider"
+msgstr ""
+
+#. Name of the template
+msgid "Page without all dropdown footer items"
+msgstr ""
+
+#: ../mrtailor/searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: ../mrtailor/searchform.php:4
+msgid "Zoeken..."
+msgstr ""
+
+#: ../mrtailor/searchform.php:5
+msgid "Search"
+msgstr ""
+
+#: ../mrtailor/archive.php:30
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../mrtailor/archive.php:38
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../mrtailor/archive.php:41
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../mrtailor/archive.php:44
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../mrtailor/archive.php:47
+msgid "Asides"
+msgstr ""
+
+#: ../mrtailor/archive.php:50
+msgid "Images"
+msgstr ""
+
+#: ../mrtailor/archive.php:53
+msgid "Videos"
+msgstr ""
+
+#: ../mrtailor/archive.php:56
+msgid "Quotes"
+msgstr ""
+
+#: ../mrtailor/archive.php:59
+msgid "Links"
+msgstr ""
+
+#: ../mrtailor/archive.php:62 ../mrtailor/sidebar.php:13
+msgid "Archives"
+msgstr ""
+
+#: ../mrtailor/archive.php:126 ../mrtailor/archive.php:130
+#: ../mrtailor/archive.php:133
+msgid "Continue Reading"
+msgstr ""
+
+#: ../mrtailor/sidebar.php:20
+msgid "Meta"
+msgstr ""
+
+#: ../mrtailor/content-link.php:23
+msgid "Posted on "
+msgstr ""
+
+#. Name of the template
+msgid "Page with Slider Full Width"
+msgstr ""
+
+#: ../mrtailor/header-centered.php:148 ../mrtailor/header-default.php:66
+msgid "MENU"
+msgstr ""
+
+#. Name of the template
+msgid "Page without header"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Page"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:19
+#: ../mrtailor/inc/custom-posts/portfolio.php:31
+msgid "Portfolio"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:20
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:21
+msgid "Add New"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:22
+msgid "Add New Portfolio item"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:23
+msgid "Edit Portfolio item"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:24
+msgid "New Portfolio item"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:25
+msgid "All Portfolio items"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:26
+msgid "View Portfolio item"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:27
+msgid "Search Portfolio item"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:28
+msgid "No Portfolio item found"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:29
+msgid "No Portfolio item found in Trash"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:63
+#: ../mrtailor/inc/custom-posts/portfolio.php:76
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:64
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:65
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:66
+msgid "Popular Portfolio Categories"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:67
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:68
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:69
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:70
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:71
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:72
+msgid "Separate Portfolio Categories with commas"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:73
+msgid "Add or remove Portfolio Categories"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:74
+msgid "Choose from the most used Portfolio Categories"
+msgstr ""
+
+#: ../mrtailor/inc/custom-posts/portfolio.php:75
+msgid "No Portfolio Category found."
+msgstr ""
+
+#: ../mrtailor/inc/templates/post-meta.php:8
+msgid "Sticky"
+msgstr ""
+
+#: ../mrtailor/inc/templates/post-meta.php:12
+msgid " This entry was posted by "
+msgstr ""
+
+#: ../mrtailor/inc/templates/post-meta.php:14
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#. used between list items, there is a space after the comma.
+#: ../mrtailor/inc/templates/post-meta.php:25
+msgid " in "
+msgstr ""
+
+#. used between list items, there is a space after the comma.
+#: ../mrtailor/inc/templates/post-meta.php:31
+msgid " and tagged "
+msgstr ""
+
+#: ../mrtailor/inc/templates/post-meta.php:42
+#: ../mrtailor/inc/templates/post-meta.php:63
+#, php-format
+msgctxt "1: post format name. 2: date"
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: ../mrtailor/inc/templates/post-meta.php:46
+msgid " on "
+msgstr ""
+
+#: ../mrtailor/inc/templates/post-meta.php:48
+#: ../mrtailor/inc/templates/post-meta.php:69
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:86
+msgid "Previous Reading"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:90
+msgid "Next Reading"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:102
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:108
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:174
+msgid "Pingback:"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:174
+#: ../mrtailor/inc/templates/template-tags.php:214
+msgid "Edit"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:189
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:192
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../mrtailor/inc/templates/template-tags.php:197
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Name of the theme
+msgid "Mr. Tailor Child"
+msgstr ""
+
+#. Description of the theme
+msgid "This is a child theme for Mr. Tailor."
+msgstr ""
+
+#. URI of the theme
+msgid "http://mrtailor.getbowtied.com/"
+msgstr ""
+
+#. Author of the theme
+msgid "Get Bowtied"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http:%20//www.getbowtied.com/"
+msgstr ""

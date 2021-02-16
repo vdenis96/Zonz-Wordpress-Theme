@@ -1,0 +1,188 @@
+11-03-2020 ========== oleg11032020 ==================================
+Fastening materials for choice Waterdicht are now perfect. However if I choose @step 1 for Waterdoorlatend the fastening materials 
+shown in the table are not correctly submitted to cart and checkout page and not correct in the mail confirmation.
+
+Fix: Fastening materials should be ok at cart for both 'Waterdoorlatend' and 'Waterdicht' cases now. Code reorganized at the same themes/mrtailor-child/area4l.php 
+
+//oleg11032020 - part of code from 'change area when u choose param in first step' moved here from bottom
+        /*
+        * change area when u choose param in first step
+        */
+        var first_step_val = jQuery('#first_step_choose_input').val();
+        var area_when_choose_first_step = 0; 
+
+
+if(first_step_val === 'waterdicht'){ //oleg11032020
+
+
+//oleg11032020 - below code from oleg05032020 moved here 
+			jQuery('#total').text(waterdicht_total.toFixed(2));
+			total = waterdicht_total;
+
+
+
+
+
+05-03-2020 ========== oleg05032020 ==================================
+fixing waterdicht_total - price of fastening materials not included in cart's TOTAL (but visible at ordering screen)
+
+Should update #total and total  not only #waterdicht_total and waterdicht_total - this works!
+//oleg05032020 - below code added
+		if(first_step_val === 'waterdicht'){
+			jQuery('#total').text(waterdicht_total);
+			total = waterdicht_total.toFixed(2);
+        }
+
+
+Form submitting for both 'waterdicht' and 'waterdoorlatend' cases
+            jQ(document).on('click', '.button2', function () {
+                jQ('#varform').submit();
+            });
+
+
+After fixing waterdicht_var1p:
+Maatwerk Lamellendoek Acryl Waterdicht (Atex 934), kleur: (14,80 m2 aan materiaal):	€675.00
+16 Rails:	€608.00
+6 Koppelstuk rails:	€8.40
+9 Eindstop rails:	€6.75
+8 Profiel:	€112.00
+6 Ophangelement:	€18.00
+4 Afdekkapje profiel:	€16.00
+6 Wieltje met karabijnhaak:	€25.80
+6 Band per 1m:	€9.90
+1 Kunststofgrip:	€4.50
+1 Katrolset:	€64.00
+1 Schroeftap M4 en diverse schroeven:	€20.00
+Totaalprijs inclusief 21% BTW:	€1568.35
+
+
+Before:
+ 	Maatwerk Lamellendoek Acryl Waterdicht (Atex 934), kleur: (14,80 m2 aan materiaal): 	€ 675.00
+	Rails: 	€ 608.00
+	Koppelstuk rails: 	€ 8.40
+	Eindstop rails: 	€ 6.75
+	Profiel: 	€ 112.00
+	Ophangelement: 	€ 18.00
+	Afdekkapje profiel: 	€ 16.00
+	Wieltje met karabijnhaak: 	€ 25.80
+	Band per 1m: 	€ 9.90
+	Kunststofgrip: 	€ 4.50
+	Katrolset: 	€ 64.00
+	Schroeftap M4 en diverse schroeven: 	€ 20.00
+	Totaalprijs inclusief 21% BTW: 	€ 893.35
+
+
+
+03-03-2020 ========= oleg03032020 ===================================
+'waterdicht' fastening materials not shown at cart(but visible at ordering screen)
+fixed at ./mrtailor-child/area4l.php
+
+
+        var datajson;// = JSON.stringify(data);
+        
+        datajson = ''+var1.toFixed(2)+' m2';
+        datajson += '<br> Breedte: '+w2+' m';
+        datajson += '<br> Uitschuifbare lengte: '+h+' m';
+        datajson += '<br> Karabijnhaakjes RVS M5 x '+var2;
+        datajson += '<br> Spansets RVS x '+var3;
+        datajson += '<br> Staaldraad RVS x '+var4;
+        datajson += '<br> Stabiliseringsbuizen x '+var5;
+        datajson += '<br> Koppelstukken x '+var6;
+        datajson += '<br> Katrolset x '+var7;
+        datajson += '<br> Bevestigingsplaat voor bevestiging in hout x '+var8;
+        jQuery('#area-input').val(datajson);
+
+
+<div class="single_variation_wrap" style="display: block;"></div>
+<input type="hidden" value="14.80 m2<br> Breedte: 3 m<br> Uitschuifbare lengte: 5 m<br> Karabijnhaakjes RVS M5 x 39<br> Spansets RVS x 2<br> Staaldraad RVS x 21<br> Stabiliseringsbuizen x 36<br> Koppelstukken x 24<br> Katrolset x 1<br> Bevestigingsplaat voor bevestiging in hout x 6" name="area" id="area-input">
+
+
+            jQ(document).on('click', '.button2', function () {
+                jQ('#varform').submit();
+            });
+
+single_add_to_cart_button button2
+
+    print_r(WC()->cart->get_cart());
+
+./woocommerce/cart/cart.php:163:    <div class="attr"><strong>Oppervlakte:&nbsp;</strong><?=$cart_item['area']['area'];?></div>
+./woocommerce/checkout/review-order.php:97: <div class="attr">
+
+
+#2
+If both 'waterdoorlatend' and 'waterdicht' are added to cart 'waterdoorlatend' is ok
+
+Oppervlakte: 7.84 m2
+Breedte: 2 m
+Uitschuifbare lengte: 4 m
+Karabijnhaakjes RVS M5 x 33
+Spansets RVS x 2
+Staaldraad RVS x 16
+Stabiliseringsbuizen x 20
+Koppelstukken x 14
+Katrolset x 1
+Bevestigingsplaat voor bevestiging in hout x 4
+
+but 'waterdicht' shows only 7 items (those of 'waterdoorlatend')
+Oppervlakte: 14.80 m2
+Breedte: 3 m
+Uitschuifbare lengte: 5 m
+Karabijnhaakjes RVS M5 x 39
+Spansets RVS x 2
+Staaldraad RVS x 21
+Stabiliseringsbuizen x 36
+Koppelstukken x 24
+Katrolset x 1
+Bevestigingsplaat voor bevestiging in hout x 6
+
+instead of 11
+16	Rails:	€608.00
+6 	Koppelstuk rails:	€8.40
+9 	Eindstop rails:	€6.75
+8	Profiel:	€112.00
+6	Ophangelement:	€18.00
+4	Afdekkapje profiel:	€16.00
+6	Wieltje met karabijnhaak:	€25.80
+6	Band per 1m:	€9.90
+1	Kunststofgrip:	€4.50
+1	Katrolset:	€64.00
+1	Schroeftap M4 en diverse schroeven: €20
+
+and total price is 675 EUR instead of €893.35
+
+02-03-2020 ============================================
+You can continue with your work for ZONZ. We were facing an issue with the current maatwerk harmonicadoek (https://www.zonz.nl/shop/harmonica-lamellendoek/maatwerk-harmonica-lamellendoek/) at ‘doeksoort’ the dropdown did no longer show images of the various ‘doeksoorten'. This has now been fixed by adding a piece of code to area4l.php, starting from line 694.
+
+27-02-2020====================================
+#1 should be fixed now. In 'waterdicht' part of the code adjusted quantities were constantly overriden by calculated quantities. Modifications are in themes/mrtailor-child/area4l.php
+marked as //oleg
+
+26-02-2020====================================
+
+
+
+Step 1 - waterdoorlatend
+Stap 2: Kies jouw Doeksoort - Anet 771
+Stap 3: Kies jouw kleur - wit
+Stap 4: Strak of in boogjes  - LOS in boogjes
+Stap 5: Hoe wil je het doet laten hangen als het is uitgeschoven? - YA!
+Breedte in cm (max. 400cm): 200
+Uitschuifbare lengte in cm(max. 800 cm): 400
+
+
+id="var2m"
+id="waterdicht_var3m"
+
+./mrtailor-child/area4l.php:520:
+var waterdicht_var4t, waterdicht_var4 ,waterdicht_var4m;
+
+./mrtailor-child/woocommerce/content-single-product.php:751:
+include $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/mrtailor-child/area4l.php';
+
+
+
+
+We're rebuilding the product configurator Develop product is live here: https://www.zonz.nl/shop/uncategorized/test-multistep/ (password z0nz  ) we face 2 challenges:
+
+1) Depending on the choice made at the first step if  "Lucht- en waterdoorlatend doek:" chosen then we show a table with fastening materials with prefilled quantities per fastening material: 2020-02-26_1152.png If user chooses at step 2 for 'waterdicht' then a different table with fastening materials is shown. Again the quantities are prefilled based on the logic already applied. However here the user cannot adjust the quantities. The amounts stick on the quantities prefilled. User should be able to change the quantities and as a result the price per row should change as well as the total price. That's challenge one 2020-02-26_1153.png
+2) once product is added to cart, the fastening materials chosen should be displayed at cart and order confirmation page. And also in confirmation e-mails send to customer and shop owner. this already works fo rthe option 1 'waterdoorlatend' but not yet for option to 'waterdicht'. to make it work for option 2 'waterdicht' is challenge no 2. 2020-02-26_1157.png
