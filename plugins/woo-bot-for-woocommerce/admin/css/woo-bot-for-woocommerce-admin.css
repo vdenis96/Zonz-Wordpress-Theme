@@ -1,0 +1,102 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+.wb-theme-dark{
+    background:#50575c !important;
+}
+#woo-bot-message-box{
+    width:100%;
+    background:transparent;
+    padding:20px;
+    margin:10px 0 30px;
+    background:#fff;
+    box-sizing:border-box;
+    box-shadow:0 0 20px rgba(0,0,0,0.25); 
+}
+#woo-bot-message-box:after{
+    content:'';
+    clear:both;
+    width:100%;
+    display:table;
+}
+.woo-bot-chat-from,
+.woo-bot-chat-to{
+    font-size:16px;
+    line-height:1.5;
+    max-width:85%;
+    padding:8px 10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    clear:both;
+}
+.woo-bot-chat-from p,
+.woo-bot-chat-to p{
+    margin:10px 0 0;
+    font-size:16px;
+}
+.woo-bot-chat-from small,
+.woo-bot-chat-to small{
+    color:#999;
+    font-size:12px;
+}
+.woo-bot-chat-from p:first-of-type,
+.woo-bot-chat-to p:first-of-type{
+    margin-top:0;
+}
+.woo-bot-chat-to ul:last-of-type{
+    margin-bottom:0;
+}
+.woo-bot-chat-from{
+    float:right;
+    text-align:right;
+    background:#ffffcc;
+    border-radius:15px 0 15px 15px;
+    border-left:1px #e0d805 solid;
+    border-bottom:1px #e0d805 solid;
+}
+.woo-bot-chat-to{
+    float:left;
+    background:#e6e6e6;
+    border-radius:0 15px 15px 15px;
+    border-right:1px #ccc solid;
+    border-bottom:1px #ccc solid;
+}
+.wb-theme-dark .woo-bot-chat-from,
+.wb-theme-dark .woo-bot-chat-to{
+    border-color:#ffffff;
+}
+.wb_chat_option{
+    background:rgba(0,0,0,0.5);
+    border:1px solid rgba(0,0,0,0.75);
+    color:#fff;
+    padding:3px 8px;
+    margin-top:5px;
+    display:inline-block;
+    border-radius:20px;
+    cursor:pointer;
+}
+.woo-bot-product-thumb{
+    background:#fff;
+    border:1px solid #ddd;
+    display:inline-block;
+    width:70px;
+    padding:2px 2px 5px;
+    margin-right:1px;
+    margin-bottom:2px;
+    font-size:10px;
+    line-height:1.25;
+    vertical-align:top;
+    text-align:center;
+    min-height:105px;
+}
+.woo-bot-product-thumb:hover{
+    border-color:#999;
+}
+.woo-bot-product-thumb img{
+    max-width:100%;
+    margin-bottom:5px;
+    display:block;
+}

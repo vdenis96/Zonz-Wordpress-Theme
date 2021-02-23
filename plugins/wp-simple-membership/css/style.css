@@ -1,0 +1,12 @@
+.myprofile-form .form-row.form-row-username > label {
+  display: inline;
+}
+.form-row > label {
+  display: block;
+}
+.form-row .error-msg {
+	color:#FF0000;
+}
+.success-msg {
+	color:#00FF00;
+}

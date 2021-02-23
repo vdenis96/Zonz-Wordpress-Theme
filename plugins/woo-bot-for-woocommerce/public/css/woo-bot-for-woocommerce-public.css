@@ -1,0 +1,448 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ 
+ #woo-bot-opener{
+    text-align:center;
+    font-size:20px;
+    cursor:pointer;
+    bottom:20px;
+    right:20px;
+    border-radius:50%;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+#woo-bot-opener.bounce-opener{
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+#woo-bot-opener:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+#woo-bot-opener .dashicons{
+    vertical-align:middle;
+    height:48px;
+    width:48px;
+}
+#woo-bot-opener .dashicons:before{
+    font-size:28px;
+    line-height:48px;
+}
+#woo-bot-opener,
+#woo-bot-messenger{
+    z-index:9999;
+    position:fixed;
+    display:block;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    box-sizing:border-box;
+}
+#woo-bot-messenger{
+    display:none;
+    background-color:#f6f6f6;
+    background-image:var(--bg-image);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    border-radius:10px;
+    bottom:70px;
+    right:20px;
+    width:320px;
+    overflow:hidden;
+    max-width:calc(100vw - 60px);
+    height:450px;
+    max-height:calc(100vh - 120px);
+}
+#woo-bot-messenger.woo-shake {
+    animation: wooshake 1s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.wb-theme-dark{
+    background-color:#50575c !important;
+}
+#woo-bot-message-input-wrapper{
+    background:rgba(255,255,255,0.5);
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    width:calc(100% - 20px);
+    height:45px;
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:inset 0 0 10px rgba(0,0,0,0.5);
+}
+.wb-theme-dark #woo-bot-message-input-wrapper{
+    background:rgba(0,0,0,0.2);
+}
+#woo-bot-message-input-wrapper input{
+    display:block;
+    width:100%;
+    color:#333;
+    background:transparent;
+    padding:10px 45px 10px 15px;
+    border:none !important;
+    outline:none !important;
+    box-shadow:unset !important;
+}
+.wb-theme-dark #woo-bot-message-input-wrapper input{
+    color:#ccc;
+}
+#woo-bot-message-send{
+    position:absolute;
+    right:0;
+    bottom:0;
+    padding:12px;
+    margin:0;
+    background:transparent;
+    border:0;
+    outline:0;
+    height:44px;
+    color:rgba(0,0,0,0.25);
+    font-size:30px;
+}
+.wb-theme-dark #woo-bot-message-send{
+    color:rgba(255,255,255,0.75);
+}
+#woo-bot-message-send:hover{
+    background:transparent;
+    border:0;
+    color:rgba(0,0,0,0.5);
+}
+.wb-theme-dark #woo-bot-message-send:hover{
+    color:rgba(255,255,255,1);
+}
+#woo-bot-message-box{
+    width:100%;
+    height:calc(100% - 45px);
+    background:transparent;
+    padding:15px 0 0 15px;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+#woo-bot-message-box .wb-scrollbar-inner{
+    height:100%;
+    overflow:hidden;
+}
+#woo-bot-message-box > .wb-scrollbar-inner{
+    padding-bottom:15px;
+    padding-right:20px;
+}
+@-moz-document url-prefix() { 
+    #woo-bot-message-box > .wb-scrollbar-inner{
+        padding-bottom:30px;
+        padding-right:40px;
+    }
+}
+#woo-bot-message-box .wb-scrollbar-inner .scroll-x{
+    display:none;
+}
+.woo-bot-chat-from,
+.woo-bot-chat-to{
+    font-size:13px;
+    line-height:1.5;
+    max-width:85%;
+    padding:8px 10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    clear:both;
+}
+.woo-bot-chat-from p,
+.woo-bot-chat-to p{
+    margin:10px 0 0;
+}
+.woo-bot-chat-from p:first-of-type,
+.woo-bot-chat-to p:first-of-type{
+    margin-top:0;
+}
+.woo-bot-chat-to ul:last-of-type{
+    margin-bottom:0;
+}
+.woo-bot-chat-from{
+    float:right;
+    background:#ffffcc;
+    border-radius:15px 0 15px 15px;
+    border-left:1px #e0d805 solid;
+    border-bottom:1px #e0d805 solid;
+}
+.woo-bot-chat-to{
+    float:left;
+    background:#e6e6e6;
+    border-radius:0 15px 15px 15px;
+    border-right:1px #ccc solid;
+    border-bottom:1px #ccc solid;
+}
+.wb-theme-dark .woo-bot-chat-from,
+.wb-theme-dark .woo-bot-chat-to{
+    border-color:#ffffff;
+}
+.wb_chat_option{
+    background:rgba(0,0,0,0.5);
+    border:1px solid rgba(0,0,0,0.75);
+    color:#fff;
+    padding:3px 8px;
+    margin-top:5px;
+    display:inline-block;
+    border-radius:20px;
+    cursor:pointer;
+}
+.woo-bot-product-thumb{
+    background:#fff;
+    border:1px solid #ddd;
+    display:inline-block;
+    width:70px;
+    padding:2px 2px 5px;
+    margin-right:1px;
+    margin-bottom:2px;
+    font-size:10px;
+    line-height:1.25;
+    vertical-align:top;
+    text-align:center;
+    min-height:105px;
+}
+.woo-bot-product-thumb:hover{
+    border-color:#999;
+}
+.woo-bot-product-thumb img{
+    max-width:100%;
+    margin-bottom:5px;
+    display:block;
+}
+.woo-bot-message-input-error::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+.woo-bot-message-input-error:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+.woo-bot-message-input-error::-ms-input-placeholder { /* Microsoft Edge */
+      color: red;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+.wb-scrollbar-inner > .scroll-element,
+.wb-scrollbar-inner > .scroll-element div
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+ 
+.wb-scrollbar-inner > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+ 
+.wb-scrollbar-inner > .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 8px;
+    left: 0;
+    width: 100%;
+}
+ 
+.wb-scrollbar-inner > .scroll-element.scroll-y {
+    height: 100%;
+    right: 2px;
+    top: 0;
+    width: 8px;
+}
+ 
+.wb-scrollbar-inner > .scroll-element .scroll-element_outer {
+    overflow: hidden;
+}
+ 
+.wb-scrollbar-inner > .scroll-element .scroll-element_outer,
+.wb-scrollbar-inner > .scroll-element .scroll-element_track,
+.wb-scrollbar-inner > .scroll-element .scroll-bar {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+ 
+.wb-scrollbar-inner > .scroll-element .scroll-element_track,
+.wb-scrollbar-inner > .scroll-element .scroll-bar {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+ 
+.wb-scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+.wb-scrollbar-inner > .scroll-element .scroll-bar { background-color: #c2c2c2; }
+.wb-scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.wb-scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+ 
+ 
+/* update scrollbar offset if both scrolls are visible */
+.wb-scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+.wb-scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+ 
+.wb-scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.wb-scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+
+/**
+* ==============================================
+* Dot Pulse
+* ==============================================
+*/
+.dot-pulse {
+    display: inline-block;
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius: 5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    box-shadow: 9999px 0 0 -5px #9880ff;
+    -webkit-animation: dot-pulse 1.5s infinite linear;
+    animation: dot-pulse 1.5s infinite linear;
+    -webkit-animation-delay: .25s;
+    animation-delay: .25s;
+}
+
+.dot-pulse::before, .dot-pulse::after {
+content: '';
+display: inline-block;
+position: absolute;
+top: 0;
+width: 10px;
+height: 10px;
+border-radius: 5px;
+background-color: #9880ff;
+color: #9880ff;
+}
+
+.dot-pulse::before {
+box-shadow: 9984px 0 0 -5px #9880ff;
+-webkit-animation: dot-pulse-before 1.5s infinite linear;
+animation: dot-pulse-before 1.5s infinite linear;
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+.dot-pulse::after {
+box-shadow: 10014px 0 0 -5px #9880ff;
+-webkit-animation: dot-pulse-after 1.5s infinite linear;
+animation: dot-pulse-after 1.5s infinite linear;
+-webkit-animation-delay: .5s;
+animation-delay: .5s;
+}
+
+@-webkit-keyframes dot-pulse-before {
+0% {
+    box-shadow: 9984px 0 0 -5px #9880ff;
+}
+30% {
+    box-shadow: 9984px 0 0 2px #9880ff;
+}
+60%,
+100% {
+    box-shadow: 9984px 0 0 -5px #9880ff;
+}
+}
+
+@keyframes dot-pulse-before {
+0% {
+    box-shadow: 9984px 0 0 -5px #9880ff;
+}
+30% {
+    box-shadow: 9984px 0 0 2px #9880ff;
+}
+60%,
+100% {
+    box-shadow: 9984px 0 0 -5px #9880ff;
+}
+}
+
+@-webkit-keyframes dot-pulse {
+0% {
+    box-shadow: 9999px 0 0 -5px #9880ff;
+}
+30% {
+    box-shadow: 9999px 0 0 2px #9880ff;
+}
+60%,
+100% {
+    box-shadow: 9999px 0 0 -5px #9880ff;
+}
+}
+
+@keyframes dot-pulse {
+0% {
+    box-shadow: 9999px 0 0 -5px #9880ff;
+}
+30% {
+    box-shadow: 9999px 0 0 2px #9880ff;
+}
+60%,
+100% {
+    box-shadow: 9999px 0 0 -5px #9880ff;
+}
+}
+
+@-webkit-keyframes dot-pulse-after {
+0% {
+    box-shadow: 10014px 0 0 -5px #9880ff;
+}
+30% {
+    box-shadow: 10014px 0 0 2px #9880ff;
+}
+60%,
+100% {
+    box-shadow: 10014px 0 0 -5px #9880ff;
+}
+}
+
+@keyframes dot-pulse-after {
+    0% {
+        box-shadow: 10014px 0 0 -5px #9880ff;
+    }
+    30% {
+        box-shadow: 10014px 0 0 2px #9880ff;
+    }
+    60%,
+    100% {
+        box-shadow: 10014px 0 0 -5px #9880ff;
+    }
+}
+  
+@keyframes wooshake {
+    10%, 90% {
+      transform: translate3d(-3px, 0, -3px);
+    }
+    
+    20%, 80% {
+      transform: translate3d(5px, 5px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-10px, 0, -10px);
+    }
+  
+    40%, 60% {
+      transform: translate3d(10px, 10px, 0);
+    }
+}

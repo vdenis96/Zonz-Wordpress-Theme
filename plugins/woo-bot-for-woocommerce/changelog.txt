@@ -1,0 +1,4 @@
+*** Woo Bot for WooCommerce Changelog ***
+
+2020-10-19 - version 1.0.0
+* Inital release

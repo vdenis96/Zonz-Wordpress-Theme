@@ -1,0 +1,64 @@
+h2 {
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+	float: left;
+}
+.dashicons-editor-help {
+	margin-top: 1.7em;
+	margin-left: 0.3em;
+	float: left;
+}
+input[type="number"], select {
+	width: 120px;
+}
+.feedbackcompany-notice-ok {
+	color: green;
+	font-weight: bold;
+}
+.feedbackcompany-notice-error {
+	color: darkred;
+	font-weight: bold;
+}
+.form-table th {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.form-table td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.form-table td p {
+	margin-top: 0px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	font-size: 0.8em;
+}
+.form-table td select {
+	min-width: 100px;
+}
+
+[data-role="feedbackcompany-shortcode"] {
+	background: rgba(0, 0, 0, 0.07);
+	font-family: monospace;
+	border: none;
+	width: 200px;
+}
+th.feedbackcompany-error {
+	color: red;
+}
+p.feedbackcompany-error {
+	color: red;
+}
+input.feedbackcompany-error {
+	border-color: red;
+}
+select.feedbackcompany-error {
+	border-color: red;
+}
+
+p.submit .button-secondary {
+	margin-left: 1em;
+}
+p.max600px {
+	max-width: 600px;
+}

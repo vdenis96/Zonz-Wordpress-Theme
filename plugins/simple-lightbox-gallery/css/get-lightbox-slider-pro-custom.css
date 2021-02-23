@@ -1,0 +1,51 @@
+ .plan-feature .btn{
+        font-size: large; font-weight: bolder;
+    }
+    .pricing-three-column{
+       margin-top: 10px;margin: 10px auto 0px;
+    }
+    .pricing-table .plan ul li.plan-feature {
+        padding: 8px !important;
+    }
+
+    .ap .plan-name {
+        background-color: #1E8CBE !important;
+    }
+
+    .bp .plan-name {
+        background-color: #1E8CBE !important;
+    }
+
+    .cp .plan-name {
+        background-color: #1E8CBE !important;
+    }
+
+    li {
+        font-size: larger !important;
+    }
+
+    .row-fluid .span4 {
+        width: 30.624% !important;
+    }
+
+    img.img-responsive {
+        width: 100%;
+    }
+    .pricing-three-column .img-responsive{
+            border: 1px solid #e3e3e3; background: #f7f7f7;padding:10px;
+        }
+        .purchase_btn_div{
+            margin-top:20px;text-align: center;
+        }
+        .purchase_btn_div a{
+            margin-right:10px;
+        }
+        .plan-name{
+            padding-top:40px; text-align: center;float:left;width:100%;
+        }
+        .plan-name h2{
+           font-weight: bold;font-size: 36px;padding-top: 30px;padding-bottom: 10px;
+        }
+        .plan-name h6{
+           font-size: 22px; padding-top: 10px; padding-bottom: 10px;
+        }
